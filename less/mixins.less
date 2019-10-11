@@ -1,1 +1,24 @@
 // Mixins Here
+.nav-flex{
+    display: flex;
+    margin: 1rem 0;
+}
+
+.nav-color{
+    color: black;
+    text-decoration: none;
+}
+
+.btn-dsktp(@bg-color, @color){
+    color: @color;
+    background-color: @bg-color;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 7px 20px;
+    font-size: 1.7rem;
+    cursor: pointer;
+    &:hover{
+        background-color: grey;
+        color: white;
+    }
+}

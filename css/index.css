@@ -183,6 +183,13 @@ p {
   justify-content: space-evenly;
   width: 50%;
 }
+@media (max-width: 500px) {
+  .navBar .navDes {
+    display: flex;
+    margin: 1rem 0;
+    width: 100%;
+  }
+}
 .navBar .navDes a {
   color: black;
   text-decoration: none;
@@ -207,10 +214,26 @@ footer {
 .home .intro .horizon-img {
   border-radius: 5px;
 }
+@media (max-width: 500px) {
+  .home .intro .horizon-img {
+    width: 100%;
+  }
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 100%;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;

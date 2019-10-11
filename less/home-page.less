@@ -14,6 +14,9 @@
 
     .horizon-img{
       border-radius: 5px;
+      @media @phone{
+        width: 100%;
+      }
   }
   
   }
@@ -22,6 +25,17 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @phone{
+      .blast{
+        width: 100%;
+      }
+      .sky{
+        display: none;
+      }
+      .launch{
+        display: none;
+      }
+    }
 
     img {
       width: 28%;
